@@ -3,99 +3,139 @@ import SwiftUI
 
 // MARK: - Colors
 enum Colors {
-    static let colorPrimary = Color(hex: "#28C76F")
-    static let colorPrimaryPressed = Color(hex: "#24B364")
-    static let colorPrimaryDisabled = Color(hex: "#1E7A50")
-    static let colorSecondary = Color(hex: "#7367F0")
-    static let colorSecondaryPressed = Color(hex: "#5E54D1")
-    static let colorSecondaryDisabled = Color(hex: "#3D2B9B")
-    static let colorBackground = Color(hex: "#121212")
-    static let colorBackgroundSurface = Color(hex: "#1E1E1E")
-    static let colorBackgroundCard = Color(hex: "#1A1A1A")
-    static let colorTextMain = Color(hex: "#FFFFFF")
-    static let colorTextSecondary = Color(hex: "#B0B0B0")
-    static let colorTextPlaceholder = Color(hex: "#666666")
-    static let colorTextDisabled = Color(hex: "#444444")
-    static let colorError = Color(hex: "#FF6F61")
-    static let colorErrorOn = Color(hex: "#FFFFFF")
-    static let colorSuccess = Color(hex: "#28C76F")
-    static let colorSuccessOn = Color(hex: "#FFFFFF")
-    static let colorWarning = Color(hex: "#FF9F43")
-    static let colorWarningOn = Color(hex: "#000000")
+    static let primary = Color(light: "#2563EB", dark: "#3B82F6")
+    static let primaryPressed = Color(light: "#1D4ED8", dark: "#2563EB")
+    static let primaryActive = Color(light: "#1E40AF", dark: "#1D4ED8")
+    static let primaryDisabled = Color(light: "#93C5FD", dark: "#1E3A8A")
+    static let secondary = Color(light: "#F3F4F6", dark: "#374151")
+    static let secondaryPressed = Color(light: "#E5E7EB", dark: "#4B5563")
+    static let bgColor = Color(light: "#FFFFFF", dark: "#0F172A")
+    static let surface = Color(light: "#F9FAFB", dark: "#1E293B")
+    static let primaryText = Color(light: "#111827", dark: "#F8FAFC")
+    static let secondaryText = Color(light: "#6B7280", dark: "#CBD5E1")
+    static let textDisabled = Color(light: "#9CA3AF", dark: "#64748B")
+    static let onPrimaryText = Color(light: "#FFFFFF", dark: "#FFFFFF")
+    static let card = Color(light: "#FFFFFF", dark: "#1E293B")
+    static let divider = Color(light: "#E5E7EB", dark: "#334155")
+    static let error = Color(light: "#DC2626", dark: "#EF4444")
+    static let success = Color(light: "#16A34A", dark: "#22C55E")
+    static let warning = Color(light: "#D97706", dark: "#F59E0B")
+    static let info = Color(light: "#0EA5E9", dark: "#06B6D4")
 }
 
 // MARK: - Typography
 enum Typography {
     enum FontFamily {
-        static let typographyFontFamilyPrimary = "Inter"
-        static let typographyFontFamilySecondary = "Roboto"
+        static let mainFont = "Inter"
+        static let displayFont = "Poppins"
     }
 
     enum FontSize {
-        static let typographyFontSize_12: CGFloat = 12
-        static let typographyFontSize_14: CGFloat = 14
-        static let typographyFontSize_16: CGFloat = 16
-        static let typographyFontSize_18: CGFloat = 18
-        static let typographyFontSize_20: CGFloat = 20
-        static let typographyFontSize_24: CGFloat = 24
+        static let fontSizeXS: CGFloat = 12
+        static let fontSizeS: CGFloat = 14
+        static let fontSizeMD: CGFloat = 16
+        static let fontSizeLG: CGFloat = 18
+        static let fontSizeXL: CGFloat = 20
+        static let fontSizeXXL: CGFloat = 24
+        static let fontSizeXXXL: CGFloat = 32
+        static let fontSizeDisplay: CGFloat = 48
     }
 
     enum FontWeight {
-        static let typographyFontWeightRegular: Int = 400
-        static let typographyFontWeightMedium: Int = 500
-        static let typographyFontWeightSemibold: Int = 600
-        static let typographyFontWeightBold: Int = 700
+        static let fontWeightLight: Int = 300
+        static let fontWeightRegular: Int = 400
+        static let fontWeightMedium: Int = 500
+        static let fontWeightSemiBold: Int = 600
+        static let fontWeightBold: Int = 700
     }
 
     enum LineHeight {
-        static let typographyLineHeightSmall: CGFloat = 16
-        static let typographyLineHeightMedium: CGFloat = 20
-        static let typographyLineHeightLarge: CGFloat = 24
+        static let lineHeightTight: CGFloat = 1.25
+        static let lineHeightNormal: CGFloat = 1.5
+        static let lineHeightRelaxed: CGFloat = 1.625
+        static let lineHeightLoose: CGFloat = 2
     }
 
     enum LetterSpacing {
-        static let typographyLetterSpacingTight: CGFloat = -0.02em
-        static let typographyLetterSpacingNormal: CGFloat = 0
-        static let typographyLetterSpacingWide: CGFloat = 0.02
+        static let letterSpacingTight: CGFloat = -0.025
+        static let letterSpacingNormal: CGFloat = 0
+        static let letterSpacingWide: CGFloat = 0.025
+        static let letterSpacingWider: CGFloat = 0.05
     }
 
 }
 
 // MARK: - Spacing
 enum Spacing {
-    static let sizeSpacingXs: CGFloat = 4
-    static let sizeSpacingSm: CGFloat = 8
-    static let sizeSpacingMd: CGFloat = 16
-    static let sizeSpacingLg: CGFloat = 24
-    static let sizeSpacingXl: CGFloat = 32
+    static let spacingXS: CGFloat = 4
+    static let spacingS: CGFloat = 8
+    static let spacingMD: CGFloat = 16
+    static let spacingLG: CGFloat = 24
+    static let spacingXL: CGFloat = 32
+    static let spacingXXL: CGFloat = 40
+    static let spacingXXXL: CGFloat = 48
+    static let spacingXXXXL: CGFloat = 64
 }
 
 // MARK: - Sizing
 enum Sizing {
-    static let sizeBorderRadiusSm: CGFloat = 4
-    static let sizeBorderRadiusMd: CGFloat = 8
-    static let sizeBorderRadiusLg: CGFloat = 16
-    static let sizeBorderRadiusRound: CGFloat = 9999
+    static let sizingXS: CGFloat = 24
+    static let sizingS: CGFloat = 32
+    static let sizingMD: CGFloat = 40
+    static let sizingLG: CGFloat = 48
+    static let sizingXL: CGFloat = 56
+    static let sizingXXL: CGFloat = 64
+    static let sizingXXXL: CGFloat = 80
+    static let heightButton: CGFloat = 44
+    static let heightInput: CGFloat = 48
+    static let heightCard: CGFloat = 120
+    static let widthSidebar: CGFloat = 280
+    static let widthModal: CGFloat = 400
+    static let widthContainer: CGFloat = 1200
+    static let iconSizeXS: CGFloat = 12
+    static let iconSizeS: CGFloat = 16
+    static let iconSizeMD: CGFloat = 20
+    static let iconSizeLG: CGFloat = 24
+    static let iconSizeXL: CGFloat = 32
+}
+
+// MARK: - Border Radius
+enum BorderRadius {
+    static let borderRadiusXS: CGFloat = 4
+    static let borderRadiusS: CGFloat = 8
+    static let borderRadiusMD: CGFloat = 12
+    static let borderRadiusLG: CGFloat = 16
+    static let borderRadiusXL: CGFloat = 20
+    static let borderRadiusXXL: CGFloat = 24
+    static let borderRadiusFull: CGFloat = 9999
+}
+
+// MARK: - Border Width
+enum BorderWidth {
+    static let borderThin: CGFloat = 1
+    static let borderMedium: CGFloat = 1.5
+    static let borderThick: CGFloat = 2
+    static let borderFocus: CGFloat = 3
 }
 
 // MARK: - Shadows
 enum Shadows {
-    static let shadowSm = ShadowStyle(
-        color: Color(hex: "rgba(0,0,0,0.1)").opacity(Opacities.shadow),
-        radius: 2,
+    static let boxShadowS = ShadowStyle(
+        color: Color(hex: "#000000").opacity(Opacities.shadow),
+        radius: 3,
         x: 0,
         y: 1
     )
 
-    static let shadowMd = ShadowStyle(
-        color: Color(hex: "rgba(0,0,0,0.15)").opacity(Opacities.shadow),
+    static let boxShadowMD = ShadowStyle(
+        color: Color(hex: "#000000").opacity(Opacities.shadow),
         radius: 6,
         x: 0,
         y: 4
     )
 
-    static let shadowLg = ShadowStyle(
-        color: Color(hex: "rgba(0,0,0,0.2)").opacity(Opacities.shadow),
+    static let boxShadowLG = ShadowStyle(
+        color: Color(hex: "#000000").opacity(Opacities.shadow),
         radius: 15,
         x: 0,
         y: 10
@@ -108,14 +148,27 @@ enum Opacities {
     static let shadow: Double = 0.25
     static let overlay: Double = 0.6
     static let disabled: Double = 0.4
-    static let opacityDisabled: Double = 0.38
-    static let opacityHover: Double = 0.08
-    static let opacityFocus: Double = 0.12
+    static let overlayOpacity: Double = 0.6
+    static let disabledOpacity: Double = 0.4
 }
 
-// MARK: - Other Tokens
-enum OtherTokens {
-    static let $schema = "https://example.com/dark-mode-tokens.schema.json"
+// MARK: - Z-Indices
+enum ZIndices {
+    static let zIndexDropdown: Double = 1000
+    static let zIndexModal: Double = 1050
+    static let zIndexTooltip: Double = 1100
+}
+
+// MARK: - Transitions
+enum Transitions {
+    static let fast: Double = 0.15
+    static let medium: Double = 0.2
+    static let slow: Double = 0.3
+    // Durations (in seconds)
+    static let transitionFast: Double = 0.15
+    static let transitionNormal: Double = 0.2
+    static let transitionSlow: Double = 0.3
+
 }
 
 // MARK: - Color Extensions
